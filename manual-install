@@ -1,0 +1,6 @@
+kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.1/manifests/metallb.yaml
+kubectl apply -f config.yaml
+
+
+arping -I ens3 192.168.1.240
+arping -I ens33 192.168.126.210
